@@ -4,7 +4,6 @@ sudo pacman -S powerline \
 	  arandr \
 	  autorandr \
 	  poetry \
-	  pyenv \
 	  xorg-xrdb \
 	  polybar \
 	  pulseaudio \

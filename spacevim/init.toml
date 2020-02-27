@@ -37,7 +37,7 @@ name="colorscheme"
 
 [[layers]]
 name = "lsp" 
-filetypes = ["javascript"]
+filetypes = ["javascript","typescript"]
 
 [[layers]]
 name = "lang#lua"

@@ -21,10 +21,14 @@
   filemanager = "nerdtree"
   autocomplete_method = "coc"
 
+  # Checker
+  enable_ale = true
+  enable_neomake = false
+
 
 [[layers]]
 name="checkers"
-enable=false
+show_cursor_error = false
 
 [[layers]]
 name="fzf"
@@ -36,14 +40,20 @@ name="tmux"
 name="colorscheme"
 
 [[layers]]
+name = "ctrlspace"
+enable-spacevim-styled-keys = true
+
+[[layers]]
 name = "lsp" 
-filetypes = ["javascript","typescript"]
+filetypes = [
+  "javascript",
+  "typescript",
+  "html",
+  "css"
+]
 
 [[layers]]
-name = "lang#lua"
-
-[[layers]]
-name = "lang#go"
+name = "lang#markdown"
 
 [[layers]]
 name = "lang#html"

@@ -6,12 +6,10 @@ sudo pacman -S powerline \
 	  poetry \
 	  xorg-xrdb \
 	  polybar \
-	  pulseaudio \
     xorg-xinput \
     xorg-xbacklight \
-    nodejs \
-    npm \
-
+    nvim \
+  
 # Install spacevim
 SPACEVIM_FILE="$HOME/.SpaceVim.d/init.toml"
 

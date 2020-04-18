@@ -46,28 +46,28 @@ change_shell(){
 }
 
 install_packages() {
-  local packages = ''
+  local packages=''
 
   # Dev Tools
-  packages += 'docker pyenv nvm'
+  packages+='docker pyenv nvm'
 
   # Terminal Stuff
-  packages += 'powerline nvim rxvt-unicode zsh'
+  packages+='powerline nvim rxvt-unicode zsh'
 
   # Monitor Tools
-  packages += 'autorandr arandr redshift'
+  packages+='autorandr arandr redshift'
 
   # Window Manager
-  packages += 'bspwm sxhkd'
+  packages+='bspwm sxhkd'
 
   # Ricing Tools
-  packages += 'xorg-xrdb xorg-xinput xorg-xbacklight xorg-wininfo tabbed dunstify polybar'
+  packages+='xorg-xrdb xorg-xinput xorg-xbacklight xorg-wininfo tabbed dunstify polybar'
 
   # Music
-  packages += 'pulseaudio pulsemixer'
+  packages+='pulseaudio pulsemixer'
 
   # Aur Helper
-  packages += 'yay'
+  packages+='yay'
 
   sudo pacman -Sy --noconfirm $packages
 }
@@ -84,15 +84,19 @@ move_files(){
 }
 
 setup_fonts(){
-  cp -r fonts/SourceCodePro /usr/share/fonts
-  cp fonts/icomoon-feather.ttf /usr/share/fonts
-  cp fonts/Ubuntu-C.ttf /usr/share/fonts
+  sudo cp -r fonts/SourceCodePro /usr/share/fonts
+  sudo cp fonts/icomoon-feather.ttf /usr/share/fonts
+  sudo cp fonts/Ubuntu-C.ttf /usr/share/fonts
 
   fc-cache -fv
 }
 
-install_packages
-setup_spacevim
-move_files
-setup_fonts
-change_shell
+main(){
+  install_packages
+  setup_spacevim
+  move_files
+  setup_fonts
+  change_shell
+}
+
+main

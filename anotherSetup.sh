@@ -10,5 +10,6 @@ sudo pacman -S tabbed \
     neofetch \
     dunstify \
     pyenv \
-    nvm 
+    nvm \
+    rxvt-unicode
 

@@ -1,4 +1,4 @@
-URxvt.font: xft:Hack:size=10, \
+URxvt.font: xft:Hack:size=11, \
             xft:SauceCode Pro Nerd Font Mono:size=11, \
             xft:icomoon-feather:size=Regular
 URxvt.scrollBar: false

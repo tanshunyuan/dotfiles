@@ -49,27 +49,34 @@ install_packages() {
   local packages=''
 
   # Dev Tools
-  packages+='docker pyenv nvm'
+  packages+=' docker pyenv nvm'
 
   # Terminal Stuff
-  packages+='powerline nvim rxvt-unicode zsh'
+  packages+=' neovim rxvt-unicode zsh neofetch'
 
   # Monitor Tools
-  packages+='autorandr arandr redshift'
+  packages+=' autorandr arandr redshift'
 
   # Window Manager
-  packages+='bspwm sxhkd'
+  packages+=' bspwm sxhkd xdo'
 
   # Ricing Tools
-  packages+='xorg-xrdb xorg-xinput xorg-xbacklight xorg-wininfo tabbed dunstify polybar'
+  packages+=' xorg-xrdb xorg-xinput xorg-xbacklight xorg-xwininfo tabbed dunstify polybar'
 
   # Music
-  packages+='pulseaudio pulsemixer'
+  packages+=' pulseaudio pulsemixer'
 
   # Aur Helper
-  packages+='yay'
+  packages+=' yay'
+
+  # Font
+  packages+= ' ttf-hack'
 
   sudo pacman -Sy --noconfirm $packages
+}
+
+update_mirrors(){
+ sudo pacman-mirrors -g
 }
 
 move_files(){
@@ -89,6 +96,10 @@ setup_fonts(){
   sudo cp fonts/Ubuntu-C.ttf /usr/share/fonts
 
   fc-cache -fv
+}
+
+powershell(){
+  pip install powerline-shell
 }
 
 main(){

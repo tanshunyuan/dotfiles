@@ -1,6 +1,6 @@
 URxvt.font: xft:Hack:size=11, \
             xft:SauceCode Pro Nerd Font Mono:size=11, \
-            xft:icomoon-feather:size=Regular
+            xft:icomoon-feather:size=Regular,
 URxvt.scrollBar: false
 
 ! Colors
@@ -49,10 +49,21 @@ URxvt.iso14755:        false
 URxvt.iso14755_52:     false
 
 ! Disable Ctrl-Alt-c & Ctrl-Alt-v bindings (optional)
-URxvt.keysym.C-M-c:    builtin-string:
-URxvt.keysym.C-M-v:    builtin-string:
+! URxvt.keysym.C-M-c:    builtin-string:
+! URxvt.keysym.C-M-v:    builtin-string:
 
 ! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste
 ! I dont know why, but I needed to use hex keysym values to get it to work
-URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
-URxvt.keysym.C-S-0x56: eval:paste_clipboard
+! URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+! URxvt.keysym.C-S-0x56: eval:paste_clipboard
+
+! Extensions
+URxvt.perl-ext-common: default,tabbed,clipboard
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste
+URxvt.keysym.C-A-V: perl:clipboard:paste_escaped

@@ -22,15 +22,6 @@ function get_clients {
 	xwininfo -id $id -children | sed -n '/[0-9]\+ \(child\|children\):/,$s/ \+\(0x[0-9a-z]\+\).*/\1/p'
 }
 
-# Get class of a wid
-function get_class {
-	id=$1
-  if [ -z $id ]; then
-    echo ""
-  else
-	  xprop -id $id | sed -n '/WM_CLASS/s/.*, "\(.*\)"/\1/p'
-  fi
-}
 
 #
 # Main Program
@@ -40,21 +31,26 @@ cmd=$1
 if [ $cmd = "add" ]; then
   	tabbedid=$(bspc query -N -n $2)
   	if [ -z $tabbedid ]; then
-    		tabbed &
-    		sleep 0.1
-    		tabbedid=$(xdotool search --class tabbed | tail -n1)
+        tabbed &
+        sleep 0.1
+        tabbedid=$(xdotool search --class tabbed | tail -n1)
+        # tabbed &
+        # tabbedid=$!
   	fi
 fi
 
 case $cmd in
 	add)
 		wid=$3
-		xdotool windowreparent $wid $tabbed
+		xdotool windowreparent $wid $tabbedid
 		;;
 	remove)
 		wid=$2
-    		tabbedid=$(bspc query -N -n focused)
+    tabbedid=$(bspc query -N -n focused)
 		xdotool windowreparent $wid $(get_root_wid)
+    if [ -z $(tabc list $tabbedid) ]; then
+      xdotool windowkill $tabbedid
+    fi
 		;;
 	list)
 		tabbedid=$2

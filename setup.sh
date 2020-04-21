@@ -58,7 +58,7 @@ install_packages() {
   packages+=' autorandr arandr redshift'
 
   # Window Manager
-  packages+=' bspwm sxhkd xdo'
+  packages+=' bspwm sxhkd xdo xdotool'
 
   # Ricing Tools
   packages+=' xorg-xrdb xorg-xinput xorg-xbacklight xorg-xwininfo tabbed dunstify polybar'
@@ -77,6 +77,12 @@ install_packages() {
 
 update_mirrors(){
  sudo pacman-mirrors -g
+}
+
+install_spaceship(){
+  git clone https://aur.archlinux.org/spaceship-prompt-git.git
+  cd spaceship-prompt-git
+  makepkg -si
 }
 
 move_files(){

@@ -11,26 +11,26 @@
     # xorg-xbacklight \
     # nvim \
 
-setup_spacevim(){
-  local SPACEVIM_FILE="$HOME/.SpaceVim.d/init.toml"
-
-  if [ -f "$SPACEVIM_FILE" ]; then
-      echo "$SPACEVIM_FILE exist"
-  else
-      echo "$SPACEVIM_FILE does not exist"
-      curl -sLf https://spacevim.org/install.sh | bash
-      # Lsp
-      npm install -g javascript-typescript-langserver
-      npm install -g typescript-language-server
-      npm install -g vscode-css-languageserver-bin
-      npm install -g vscode-html-languageserver-bin
-      pip install --user python-language-server
-
-      # Python dep
-      pip install --user flake8
-      pip install --user yapf
-  fi
-}
+#setup_spacevim(){
+#  local SPACEVIM_FILE="$HOME/.SpaceVim.d/init.toml"
+#
+#  if [ -f "$SPACEVIM_FILE" ]; then
+#      echo "$SPACEVIM_FILE exist"
+#  else
+#      echo "$SPACEVIM_FILE does not exist"
+#      curl -sLf https://spacevim.org/install.sh | bash
+#      # Lsp
+#      npm install -g javascript-typescript-langserver
+#      npm install -g typescript-language-server
+#      npm install -g vscode-css-languageserver-bin
+#      npm install -g vscode-html-languageserver-bin
+#      pip install --user python-language-server
+#
+#      # Python dep
+#      pip install --user flake8
+#      pip install --user yapf
+#  fi
+#}
 
 change_shell(){
   local ZSH_FILE="/bin/zsh"

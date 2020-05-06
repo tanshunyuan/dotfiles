@@ -2,24 +2,6 @@
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# Powerline
-# function powerline_precmd() {
-    # PS1="$(powerline-shell --shell zsh $?)"
-# }
-#
-# function install_powerline_precmd() {
-  # for s in "${precmd_functions[@]}"; do
-    # if [ "$s" = "powerline_precmd" ]; then
-      # return
-    # fi
-  # done
-  # precmd_functions+=(powerline_precmd)
-# }
-#
-# if [ "$TERM" != "linux" ]; then
-    # install_powerline_precmd
-# fi
-
 # Alias
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias ga='git add .'
@@ -30,6 +12,7 @@ alias down='cd ~/Downloads/'
 alias bconfig='vim ~/.config/bspwm/bspwmrc'
 alias kconfig='vim ~/.config/sxhkd/sxhkdrc'
 alias pconfig='vim ~/.config/polybar/modules.ini'
+alias nconfig='vim ~/.config/nvim/init.vim'
 alias r='exec $SHELL'
 
 # Autoload colors
@@ -135,27 +118,65 @@ SPACESHIP_CHAR_SYMBOL=❯
 SPACESHIP_CHAR_SUFFIX=" "
 SPACESHIP_HG_SHOW=false
 SPACESHIP_PACKAGE_SHOW=false
-SPACESHIP_NODE_SHOW=false
-SPACESHIP_RUBY_SHOW=false
-SPACESHIP_ELM_SHOW=false
-SPACESHIP_ELIXIR_SHOW=false
-SPACESHIP_XCODE_SHOW_LOCAL=false
-SPACESHIP_SWIFT_SHOW_LOCAL=false
-SPACESHIP_GOLANG_SHOW=false
-SPACESHIP_PHP_SHOW=false
-SPACESHIP_RUST_SHOW=false
-SPACESHIP_JULIA_SHOW=false
-SPACESHIP_DOCKER_SHOW=false
-SPACESHIP_DOCKER_CONTEXT_SHOW=false
-SPACESHIP_AWS_SHOW=false
-SPACESHIP_CONDA_SHOW=false
-SPACESHIP_VENV_SHOW=true
-SPACESHIP_PYENV_SHOW=true
-SPACESHIP_DOTNET_SHOW=false
-SPACESHIP_EMBER_SHOW=false
-SPACESHIP_KUBECONTEXT_SHOW=false
-SPACESHIP_TERRAFORM_SHOW=false
-SPACESHIP_TERRAFORM_SHOW=false
+
+# NODE
+SPACESHIP_NODE_PREFIX="node:("
+SPACESHIP_NODE_SUFFIX=") "
+SPACESHIP_NODE_SYMBOL=""
+
+# RUBY
+SPACESHIP_RUBY_PREFIX="ruby:("
+SPACESHIP_RUBY_SUFFIX=") "
+SPACESHIP_RUBY_SYMBOL=""
+
+# XCODE
+SPACESHIP_XCODE_PREFIX="xcode:("
+SPACESHIP_XCODE_SUFFIX=") "
+SPACESHIP_XCODE_SYMBOL=""
+
+# SWIFT
+SPACESHIP_SWIFT_PREFIX="swift:("
+SPACESHIP_SWIFT_SUFFIX=") "
+SPACESHIP_SWIFT_SYMBOL=""
+
+# GOLANG
+SPACESHIP_GOLANG_PREFIX="go:("
+SPACESHIP_GOLANG_SUFFIX=") "
+SPACESHIP_GOLANG_SYMBOL=""
+
+# DOCKER
+SPACESHIP_DOCKER_PREFIX="docker:("
+SPACESHIP_DOCKER_SUFFIX=") "
+SPACESHIP_DOCKER_SYMBOL=""
+
+# VENV
+SPACESHIP_VENV_PREFIX="venv:("
+SPACESHIP_VENV_SUFFIX=") "
+
+# PYENV
+SPACESHIP_PYENV_PREFIX="python:("
+SPACESHIP_PYENV_SUFFIX=") "
+SPACESHIP_PYENV_SYMBOL=""
+
+# SPACESHIP_RUBY_SHOW=false SPACESHIP_ELM_SHOW=false
+# SPACESHIP_ELIXIR_SHOW=false
+# SPACESHIP_XCODE_SHOW_LOCAL=false
+# SPACESHIP_SWIFT_SHOW_LOCAL=false
+# SPACESHIP_GOLANG_SHOW=false
+# SPACESHIP_PHP_SHOW=false
+# SPACESHIP_RUST_SHOW=false
+# SPACESHIP_JULIA_SHOW=false
+# SPACESHIP_DOCKER_SHOW=false
+# SPACESHIP_DOCKER_CONTEXT_SHOW=false
+# SPACESHIP_AWS_SHOW=false
+# SPACESHIP_CONDA_SHOW=false
+# SPACESHIP_VENV_SHOW=true
+# SPACESHIP_PYENV_SHOW=true
+# SPACESHIP_DOTNET_SHOW=false
+# SPACESHIP_EMBER_SHOW=false
+# SPACESHIP_KUBECONTEXT_SHOW=false
+# SPACESHIP_TERRAFORM_SHOW=false
+# SPACESHIP_TERRAFORM_SHOW=false
 SPACESHIP_VI_MODE_SHOW=false
 SPACESHIP_JOBS_SHOW=false
 

@@ -4,6 +4,6 @@ export PATH
 
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMINAL="urxvt"
+export TERMINAL="alacritty"
 export BROWSER="firefox"
 export WM="bspwm"

@@ -7,7 +7,7 @@ super + Return
   $TERMINAL
 
 # Reload terminal
-super + x 
+super + x
   xrdb ~/.Xresources && dunstify "xrdb" "Reloaded"
 
 # program launcher
@@ -28,6 +28,8 @@ super + shift + q
 super + shift + w
   $BROWSER
 
+super + shift + x
+  gnome-screenshot -i
 # bspwm hotkeys
 super + shift + x
 	read "Shutdown computer?" "shutdown -h now"
@@ -36,7 +38,7 @@ super + shift + BackSpace
 super + shift + s
 	sudo systemctl suspend
 
-# Brightness 
+# Brightness
 XF86MonBrightnessDown
 	xbacklight -dec 15
 XF86MonBrightnessUp
@@ -83,8 +85,8 @@ super + g
 #
 
 # set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+# super + {t,shift + t,s,f}
+	# bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -99,12 +101,16 @@ super + {_,shift + }{j,k,l,semicolon}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
-super + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+# super + {p,b,comma,period}
+	# bspc node -f @{parent,brother,first,second}
 
-# focus the next/previous node in the current desktop
-super + {_,shift + }c
-	bspc node -f {next,prev}.local
+#focus the next/previous node in the current desktop
+# super + {_,shift + }c
+  # bspc node -f {next,prev}.local
+
+# focus the next/previous node in the same window
+super + {comma,period}
+  bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -126,18 +132,19 @@ super + {_,shift + }{1-9,0}
 
 #---Tabbing---#
 # Prompt to open new app as a new tab
-super + t; d
-    tabdmenu
+# super + t; d
+    # tabdmenu
 
 # Add focused window to a tabbed instance in given direction
-super + t; {h,j,k,l}
-    tabc add {west,south,north,east} "$(bspc query -N -n focused)"
+# super + t; {j,k,l,semicolon}
+super + t; {j,k,l,semicolon}
+    tabc.sh add {west,south,north,east} $(bspc query -N -n focused)
 
 # Remove one tab from tabbed
 super + t; r
     tabbed=$(bspc query -N -n focused); \
-    child=$(tabc list $tabbed | head -n1); \
-    tabc remove $child
+    child=$(tabc.sh list $tabbed | head -n1); \
+    tabc.sh remove $child
 #
 # preselect
 #

@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/shunyuan/Desktop/wordpreess/.git'
+let g:netrw_dirhist_5='/home/shunyuan/Desktop/bogus-diner/.git'
+let g:netrw_dirhist_4='/home/shunyuan/Desktop/skilio-pm-tool'
+let g:netrw_dirhist_3='/home/shunyuan/Desktop/dotfiles'
+let g:netrw_dirhist_2='/home/shunyuan/.config/alacritty/alacritty.yml'
+let g:netrw_dirhist_1='/home/shunyuan/Desktop/skilio-pm-tool/src/app'

@@ -13,6 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'mkitt/tabline.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
 " Colorscheme
 Plug 'joshdick/onedark.vim'
 call plug#end()

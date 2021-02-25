@@ -14,9 +14,14 @@ change_shell(){
 
 install_packages() {
   local packages=''
+  #browser
+  packages+=' google-chrome firefox-developer-edition'
+
+  #zsh stuff
+  packages+=' zsh-syntax-highlighting'
 
   # Dev Tools
-  packages+=' docker pyenv nvm'
+  packages+=' docker pyenv nvm git'
 
   # Terminal Stuff
   packages+=' neovim alacritty zsh neofetch'
@@ -34,7 +39,7 @@ install_packages() {
   packages+=' pulseaudio pulsemixer'
 
   # Aur Helper
-  packages+=' yay'
+  packages+=' paru'
 
   # Font
   packages+= ' ttf-hack'
@@ -58,9 +63,9 @@ move_files(){
   cp -r .config/sxhkd ~/.config
   cp -r .config/scripts ~/.config
 
-  cp .Xresources ~ 
-  cp .zshenv ~ 
-  cp .zshrc ~ 
+  cp .Xresources ~
+  cp .zshenv ~
+  cp .zshrc ~
 }
 
 setup_fonts(){

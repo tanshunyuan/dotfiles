@@ -5,10 +5,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Alias
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias ga='git add .'
-alias gss='git status' 
-alias gcm='git commit -m' 
-alias desk='cd ~/Desktop/' 
-alias down='cd ~/Downloads/' 
+alias gss='git status'
+alias gcm='git commit -m'
+alias desk='cd ~/Desktop/'
+alias down='cd ~/Downloads/'
 alias bconfig='vim ~/.config/bspwm/bspwmrc'
 alias kconfig='vim ~/.config/sxhkd/sxhkdrc'
 alias pconfig='vim ~/.config/polybar/modules.ini'
@@ -158,28 +158,12 @@ SPACESHIP_PYENV_PREFIX="python:("
 SPACESHIP_PYENV_SUFFIX=") "
 SPACESHIP_PYENV_SYMBOL=""
 
-# SPACESHIP_RUBY_SHOW=false SPACESHIP_ELM_SHOW=false
-# SPACESHIP_ELIXIR_SHOW=false
-# SPACESHIP_XCODE_SHOW_LOCAL=false
-# SPACESHIP_SWIFT_SHOW_LOCAL=false
-# SPACESHIP_GOLANG_SHOW=false
-# SPACESHIP_PHP_SHOW=false
-# SPACESHIP_RUST_SHOW=false
-# SPACESHIP_JULIA_SHOW=false
-# SPACESHIP_DOCKER_SHOW=false
-# SPACESHIP_DOCKER_CONTEXT_SHOW=false
-# SPACESHIP_AWS_SHOW=false
-# SPACESHIP_CONDA_SHOW=false
-# SPACESHIP_VENV_SHOW=true
-# SPACESHIP_PYENV_SHOW=true
-# SPACESHIP_DOTNET_SHOW=false
-# SPACESHIP_EMBER_SHOW=false
-# SPACESHIP_KUBECONTEXT_SHOW=false
-# SPACESHIP_TERRAFORM_SHOW=false
-# SPACESHIP_TERRAFORM_SHOW=false
 SPACESHIP_VI_MODE_SHOW=false
 SPACESHIP_JOBS_SHOW=false
 
 # Spaceship Prompt
 autoload -U promptinit; promptinit
 prompt spaceship
+
+# Load syntax highlighting
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

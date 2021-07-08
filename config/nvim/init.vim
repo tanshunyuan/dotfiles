@@ -43,13 +43,5 @@ call plug#end()
 " luafile ~/.config/nvim/lua/lspconfig/sumneko_lua.lua
 
 " Theme
-" syntax enable
-colorscheme onedark
-
-" if exists('+termguicolors')
-"   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"   set termguicolors
-" endif
-
-" colorscheme spaceduck
+source ~/.config/nvim/themes/onedark.vim
+" source ~/.config/nvim/themes/spaceduck.vim

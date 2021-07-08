@@ -24,7 +24,7 @@ install_packages() {
   packages+=' docker pyenv nvm git'
 
   # Terminal Stuff
-  packages+=' neovim alacritty zsh neofetch'
+  packages+=' neovim tmux ranger alacritty zsh neofetch'
 
   # Monitor Tools
   packages+=' autorandr arandr redshift'

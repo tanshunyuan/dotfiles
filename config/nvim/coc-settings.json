@@ -11,6 +11,7 @@
         "javascript.jsx",
         "graphql",
         "css",
-        "scss"
+        "scss",
+        "tailwindcss"
     ]
 }

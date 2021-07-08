@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/shunyuan/.config/nvim'
+let g:netrw_dirhist_5='/home/shunyuan/Desktop/supabase-second/examples/nextjs-with-supabase-auth/pages'
+let g:netrw_dirhist_4='/home/shunyuan/Desktop/supabase-second/examples/nextjs-with-supabase-auth'
 let g:netrw_dirhist_3='/Users/shunyuan/Desktop/scsstesting'
 let g:netrw_dirhist_2='/Users/shunyuan/.config/nvim'
 let g:netrw_dirhist_1='/Users/shunyuan/Desktop/dotfiles/macos/config'
@@ -7,6 +10,3 @@ let g:netrw_dirhist_0='/Users/shunyuan/Desktop/dotfiles/macos'
 let g:netrw_dirhist_9='/Users/shunyuan/Desktop/dotfiles'
 let g:netrw_dirhist_8='/usr/share/fonts'
 let g:netrw_dirhist_7='/home/stoning_user/.config/alacritty'
-let g:netrw_dirhist_6='/home/shunyuan/Desktop/wordpreess/.git'
-let g:netrw_dirhist_5='/home/shunyuan/Desktop/bogus-diner/.git'
-let g:netrw_dirhist_4='/home/shunyuan/Desktop/skilio-pm-tool'

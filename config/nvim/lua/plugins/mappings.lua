@@ -18,23 +18,16 @@ map("v", "x", [=[ "_x ]=], opt)
  this line too ]]
 --
 
--- OPEN TERMINALS --
--- map("n", "<C-l>", [[<Cmd>vnew term://bash <CR>]], opt) -- term over right
--- map("n", "<C-x>", [[<Cmd> split term://bash | resize 10 <CR>]], opt) --  term bottom
--- map("n", "<C-t>t", [[<Cmd> tabnew | term <CR>]], opt) -- term newtab
 
-
+-- Split Tabs
+map("n", "<localleader>sv", "<C-w>v", opt)
+map("n", "<localleader>sh", "<C-w>s", opt)
 
 -- Navigate Tabs
--- nnoremap <C-h> <C-w>h
--- nnoremap <C-j> <C-w>j
--- nnoremap <C-k> <C-w>k
--- nnoremap <C-l> <C-w>l
 map("n", "<C-h>", "<C-w>h", opt)
 map("n", "<C-j>", "<C-w>j", opt)
 map("n", "<C-k>", "<C-w>k", opt)
 map("n", "<C-l>", "<C-w>l", opt)
-map("n", "<C-v>", "<C-w>v", opt)
 
 
 -- copy whole file content

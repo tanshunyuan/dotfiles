@@ -5,6 +5,7 @@ require "plugins/top-bufferline"
 local g = vim.g
 
 g.mapleader = " "
+g.maplocalleader = ";"
 g.auto_save = false
 
 -- colorscheme related stuff
@@ -17,7 +18,12 @@ require "plugins/highlights"
 require "plugins/mappings"
 require "plugins/file-icons"
 require "plugins/statusline"
+
 require "lspconfig/html-lsp"
+require "lspconfig/golang-lsp"
+require "lspconfig/js-lsp"
+require "lspconfig/tailwindcss-lsp"
+
 
 -- hide line numbers , statusline in specific buffers!
 vim.api.nvim_exec(

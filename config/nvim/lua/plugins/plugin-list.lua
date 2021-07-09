@@ -6,8 +6,13 @@ return packer.startup(
         use "wbthomason/packer.nvim"
 
 
-        -- my own shit 
-        use "tpope/vim-commentary"
+        -- my own shit
+        use {
+            "mattn/emmet-vim",
+            config = function()
+              require('plugins/emmet').config()
+            end
+        }
 
         use {
             "folke/which-key.nvim",

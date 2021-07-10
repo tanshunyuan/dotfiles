@@ -15,7 +15,6 @@ opt.timeoutlen = 200
 opt.clipboard = "unnamedplus"
 
 -- Numbers
--- opt.number = true
 opt.numberwidth = 2
 opt.relativenumber = true
 

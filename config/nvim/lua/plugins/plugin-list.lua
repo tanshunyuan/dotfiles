@@ -50,6 +50,11 @@ return packer.startup(
             event = "BufRead",
             config = function()
                 require("plugins/nvim-lspconfig").config()
+                require("lspconfig/html-lsp")
+                require("lspconfig/css-lsp")
+                require("lspconfig/js-lsp")
+                require("lspconfig/json-lsp")
+                require("lspconfig/tailwindcss-lsp")
             end
         }
 

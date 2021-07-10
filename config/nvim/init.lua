@@ -19,12 +19,6 @@ require "plugins/mappings"
 require "plugins/file-icons"
 require "plugins/statusline"
 
-require "lspconfig/html-lsp"
-require "lspconfig/golang-lsp"
-require "lspconfig/js-lsp"
-require "lspconfig/tailwindcss-lsp"
-
-
 -- hide line numbers , statusline in specific buffers!
 vim.api.nvim_exec(
     [[

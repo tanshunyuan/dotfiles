@@ -176,7 +176,7 @@ _G.packer_plugins = {
     wants = { "LuaSnip" }
   },
   ["nvim-lspconfig"] = {
-    config = { "\27LJ\1\2E\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\vconfig\27plugins/nvim-lspconfig\frequire\0" },
+    config = { "\27LJ\1\2ä\1\0\0\2\0\b\0\0214\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\0014\0\0\0%\1\3\0>\0\2\0014\0\0\0%\1\4\0>\0\2\0014\0\0\0%\1\5\0>\0\2\0014\0\0\0%\1\6\0>\0\2\0014\0\0\0%\1\a\0>\0\2\1G\0\1\0\30lspconfig/tailwindcss-lsp\23lspconfig/json-lsp\21lspconfig/js-lsp\22lspconfig/css-lsp\23lspconfig/html-lsp\vconfig\27plugins/nvim-lspconfig\frequire\0" },
     loaded = false,
     needs_bufread = false,
     path = "/home/shunyuan/.local/share/nvim/site/pack/packer/opt/nvim-lspconfig"

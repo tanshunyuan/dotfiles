@@ -15,7 +15,10 @@ brew tap homebrew/cask-fonts
 
 # Brew Formulae
 brew install zsh
-brew install iterm2
+brew install fzf
+brew install nvm
+brew install postgresql
+brew install pyenv
 brew install neovim
 brew install vim
 brew install tree
@@ -26,7 +29,7 @@ brew install ripgrep
 brew install rename
 brew install bear
 brew install neofetch
-brew install starship
+brew install spaceship
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install skhd --head
@@ -45,6 +48,14 @@ brew install --cask sloth
 brew install --cask zoom
 brew install --cask cutter
 brew install --cask font-hack-nerd-font
+brew install --cask iterm2
+brew install --cask arc
+brew install --cask dbeaver-community
+brew install --cask visual-studio-code
+brew install --cask spotify
+brew install --cask obsidian
+brew install --cask postman
+brew install --cask snipaste
 
 # Mac App Store Apps
 echo "Installing Mac App Store Apps..."

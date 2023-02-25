@@ -1,4 +1,3 @@
-
 # for macos
  export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -9,13 +8,16 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias ga='git add .'
 alias gss='git status'
 alias gcm='git commit -m'
+alias gcu='git checkout'
 alias desk='cd ~/Desktop/'
 alias down='cd ~/Downloads/'
 alias bconfig='vim ~/.config/bspwm/bspwmrc'
 alias kconfig='vim ~/.config/sxhkd/sxhkdrc'
 alias pconfig='vim ~/.config/polybar/modules.ini'
 alias nconfig='vim ~/.config/nvim/init.vim'
+alias cpath='pwd|pbcopy'
 alias r='exec $SHELL'
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # Autoload colors
 autoload -U colors && colors
@@ -40,9 +42,6 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
-bindkey -v
-export KEYTIMEOUT=1
-
 # Enable searching through history
 bindkey '^R' history-incremental-pattern-search-backward
 
@@ -116,7 +115,7 @@ source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_CHAR_SYMBOL=❯
+SPACESHIP_CHAR_SYMBOL=‚ùØ
 SPACESHIP_CHAR_SUFFIX=" "
 SPACESHIP_HG_SHOW=false
 SPACESHIP_PACKAGE_SHOW=false
@@ -169,4 +168,14 @@ prompt spaceship
 
 # For macos
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 fpath=($fpath "/Users/shunyuan/.zfunctions")
+
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+
+
+# PyEnv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

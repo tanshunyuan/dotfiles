@@ -14,6 +14,8 @@ echo "Installing Brew Formulae..."
 brew tap homebrew/cask-fonts
 
 # Brew Formulae
+brew install zsh
+brew install iterm2
 brew install neovim
 brew install vim
 brew install tree

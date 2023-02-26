@@ -33,7 +33,7 @@ brew install spaceship
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install skhd --head
-brew install yabai --head
+brew install koekeishiya/formulae/yabai
 brew install nnn --head
 brew install sketchybar
 brew install btop

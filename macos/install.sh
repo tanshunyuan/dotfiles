@@ -12,6 +12,7 @@ brew analytics off
 # Brew Taps
 echo "Installing Brew Formulae..."
 brew tap homebrew/cask-fonts
+brew tap FelixKratz/formulae
 
 # Brew Formulae
 brew install zsh

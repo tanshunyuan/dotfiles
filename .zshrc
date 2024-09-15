@@ -1,19 +1,28 @@
-# Nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# for macos
+ export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Alias
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias ga='git add .'
 alias gss='git status'
 alias gcm='git commit -m'
+alias gcu='git checkout'
 alias desk='cd ~/Desktop/'
 alias down='cd ~/Downloads/'
 alias bconfig='vim ~/.config/bspwm/bspwmrc'
 alias kconfig='vim ~/.config/sxhkd/sxhkdrc'
 alias pconfig='vim ~/.config/polybar/modules.ini'
 alias nconfig='vim ~/.config/nvim/init.vim'
+alias cpath='pwd|pbcopy'
 alias r='exec $SHELL'
+
+alias personal='cd ~/Desktop/coding-thangs/personal'
+alias xendit='cd ~/Desktop/coding-thangs/xendit'
+alias gignite='cd ~/Desktop/coding-thangs/gignite'
+# alias kubectl='minikube kubectl --'
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # Autoload colors
 autoload -U colors && colors
@@ -38,9 +47,6 @@ compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
-bindkey -v
-export KEYTIMEOUT=1
-
 # Enable searching through history
 bindkey '^R' history-incremental-pattern-search-backward
 
@@ -165,5 +171,55 @@ SPACESHIP_JOBS_SHOW=false
 autoload -U promptinit; promptinit
 prompt spaceship
 
-# Load syntax highlighting
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# For macos
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+fpath=($fpath "/Users/shunyuan/.zfunctions")
+
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+
+# PyEnv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+source /Users/shunyuan/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# Created by `pipx` on 2023-08-18 02:17:20
+export PATH="$PATH:/Users/shunyuan/.local/bin"
+
+# pnpm
+export PNPM_HOME="/Users/shunyuan/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/shunyuan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/shunyuan/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/shunyuan/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/shunyuan/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# For Golang
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
+## autorun direnv
+eval "$(direnv hook zsh)"
+
+alias ls="eza --icons=always"
+
+eval "$(zoxide init zsh)"
+alias cd="z"

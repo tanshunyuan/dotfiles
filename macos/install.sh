@@ -16,6 +16,7 @@ brew tap FelixKratz/formulae
 
 # Brew Formulae
 brew install zsh
+brew install bat
 brew install fzf
 brew install nvm
 brew install postgresql

@@ -11,7 +11,6 @@ alias r='exec $SHELL'
 alias personal='cd ~/Desktop/coding-thangs/personal'
 alias xendit='cd ~/Desktop/coding-thangs/xendit'
 alias gignite='cd ~/Desktop/coding-thangs/gignite'
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 
 # Use direnv

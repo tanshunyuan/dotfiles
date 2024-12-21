@@ -31,15 +31,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# PyEnv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# Created by `pipx` on 2023-08-18 02:17:20
-export PATH="$PATH:$HOME/.local/bin"
-## Python END
-
 # For Golang
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin

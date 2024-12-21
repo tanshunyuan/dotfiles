@@ -28,10 +28,6 @@ source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null
 # For macos
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-
 source $HOME/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 

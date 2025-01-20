@@ -7,6 +7,7 @@ alias desk='cd ~/Desktop/'
 alias down='cd ~/Downloads/'
 alias cpath='pwd|pbcopy'
 alias r='exec $SHELL'
+alias vim='nvim'
 
 alias personal='cd ~/Desktop/coding-thangs/personal'
 alias xendit='cd ~/Desktop/coding-thangs/xendit'

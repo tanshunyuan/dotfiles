@@ -1,0 +1,5 @@
+[tools]
+bun = "latest"
+node = "20.3.0"
+python = "latest"
+uv = "latest"

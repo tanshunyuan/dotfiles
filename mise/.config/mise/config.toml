@@ -3,3 +3,6 @@ bun = "latest"
 node = "20.3.0"
 python = "latest"
 uv = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = []

@@ -21,3 +21,5 @@ _darcs
 ^/COPYING
 
 ^\Brewfile
+
+\other-than-configs

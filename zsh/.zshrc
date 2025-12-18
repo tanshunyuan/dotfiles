@@ -32,5 +32,3 @@ source $HOME/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 eval "$(starship init zsh)"
 eval "$(/opt/homebrew/bin/mise activate zsh)"
-# Added by Windsurf
-export PATH="/Users/shunyuan/.codeium/windsurf/bin:$PATH"

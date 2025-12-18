@@ -4,7 +4,7 @@ export PATH
 
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMINAL="alacritty"
+export TERMINAL="wezterm"
 export BROWSER="firefox-developer-edition"
 export WM="bspwm"
 . "$HOME/.cargo/env"

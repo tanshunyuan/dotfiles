@@ -3,16 +3,10 @@ alias ga='git add .'
 alias gss='git status'
 alias gcm='git commit -m'
 alias gcu='git checkout'
-alias desk='cd ~/Desktop/'
-alias down='cd ~/Downloads/'
+alias doc='cd ~/Documents/'
 alias cpath='pwd|pbcopy'
 alias r='exec $SHELL'
 alias vim='nvim'
-
-alias personal='cd ~/Desktop/coding-thangs/personal'
-alias xendit='cd ~/Desktop/coding-thangs/xendit'
-alias gignite='cd ~/Desktop/coding-thangs/gignite'
-
 
 # Use direnv
 eval "$(direnv hook zsh)"

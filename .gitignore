@@ -6,3 +6,7 @@
 .config/zed/prompts
 
 node_modules
+ssh-keys-list.txt
+
+other-than-configs/browsers/firefox
+other-than-configs/browsers/zen

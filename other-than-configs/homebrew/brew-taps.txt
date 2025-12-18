@@ -1,0 +1,6 @@
+felixkratz/formulae
+homebrew/bundle
+homebrew/services
+jorgerojas26/lazysql
+nikitabobko/tap
+stripe/stripe-cli

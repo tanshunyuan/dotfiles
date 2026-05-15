@@ -20,6 +20,4 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
-^\Brewfile
-
-^\other-than-configs
+^/other-than-configs

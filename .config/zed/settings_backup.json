@@ -7,17 +7,13 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "project_panel": {
-    "dock": "left"
-  },
   "auto_update": false,
   "agent": {
-    "sidebar_side": "right",
     "default_model": {
       "provider": "google",
       "model": "gemini-2.5-flash"
     },
-    "play_sound_when_agent_done": "always"
+    "play_sound_when_agent_done": true
   },
   "ssh_connections": [
     {

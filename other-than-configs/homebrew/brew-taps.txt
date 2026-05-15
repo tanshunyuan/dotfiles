@@ -1,6 +1,7 @@
+erictli/tap
 felixkratz/formulae
-homebrew/bundle
-homebrew/services
 jorgerojas26/lazysql
 nikitabobko/tap
+run-llama/liteparse
 stripe/stripe-cli
+virtuslab/scala-cli

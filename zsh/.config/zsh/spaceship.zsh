@@ -48,5 +48,5 @@ SPACESHIP_VI_MODE_SHOW=false
 SPACESHIP_JOBS_SHOW=false
 
 # Spaceship Prompt
-autoload -U promptinit; promptinit
-prompt spaceship
+# autoload -U promptinit; promptinit
+# prompt spaceship

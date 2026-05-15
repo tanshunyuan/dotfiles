@@ -5,6 +5,10 @@
 .config/zed/.tmp*
 .config/zed/prompts
 
+.pi/agent/.env
+.pi/agent/auth.json
+.pi/agent/sessions/*
+
 node_modules
 ssh-keys-list.txt
 

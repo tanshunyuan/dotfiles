@@ -28,7 +28,9 @@ source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null
 # For macos
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source $HOME/.docker/init-zsh.sh || true # Added by Docker Desktop
-
 eval "$(starship init zsh)"
 eval "$(/opt/homebrew/bin/mise activate zsh)"
+
+# Launch pi with ZAI credentials loaded from ~/.pi/agent/.env
+alias pi-zai='set -a; source ~/.pi/agent/.env; set +a; pi'
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

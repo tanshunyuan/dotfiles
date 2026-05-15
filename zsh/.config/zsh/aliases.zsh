@@ -2,6 +2,7 @@ command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
 alias ga='git add .'
 alias gss='git status'
 alias gcm='git commit -m'
+alias gp='git pull'
 alias gcu='git checkout'
 alias doc='cd ~/Documents/'
 alias cpath='pwd|pbcopy'

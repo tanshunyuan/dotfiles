@@ -22,4 +22,4 @@ _darcs
 
 ^\Brewfile
 
-\other-than-configs
+^\other-than-configs

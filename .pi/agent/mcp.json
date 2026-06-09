@@ -6,21 +6,11 @@
     "pencil": {
       "transport": "stdio",
       "command": "/Applications/Pencil.app/Contents/Resources/app.asar.unpacked/out/mcp-server-darwin-arm64",
-      "args": [
-        "--app",
-        "desktop"
-      ],
+      "args": ["--app", "desktop"],
       "env": {}
     },
-    "linear": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "mcp-remote",
-        "https://mcp.linear.app/mcp"
-      ],
-      "auth": "oauth",
-      "env": {}
+    "penpot": {
+      "url": "https://design.penpot.app/mcp/stream?userToken=eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2R0NNIn0.ysYuUFTC2HTIvJJ9UN1HQJe9TeR3_hqoimJSC8VN9AROwOc37oLkPA.iLToimHV3BBt4D_l.7DEyoMfwBOyeqi0EKiva-wBaYH7AC9QBaA997MaapUy_SzZOspOWYDSoisWKDCGz88Ys8rQlmxNZgzfNfKPmh-r1TlBJOXImIeJlnc6LRu-0Jpv9oI-t27ZfvOewyVLvUp8Nz0PQn-5zzHl47MQu-vRdXmzCsFkfH7mEHRymnApEeGiYQfh_RAr_X-f8Hi2Rl6e6yG6KaTQp.dD_1wq56P621zFZN5xqDsA"
     }
   }
 }

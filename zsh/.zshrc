@@ -34,3 +34,5 @@ eval "$(/opt/homebrew/bin/mise activate zsh)"
 # Launch pi with ZAI credentials loaded from ~/.pi/agent/.env
 alias pi-zai='set -a; source ~/.pi/agent/.env; set +a; pi'
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+export PATH="$HOME/.config/zig-aarch64-macos-0.17.0-dev.813+2153f8143/zig:$PATH"

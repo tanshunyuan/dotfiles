@@ -576,7 +576,7 @@
       "cachedAt": 1780642687622
     },
     "penpot": {
-      "configHash": "f518f3e055b68c007ca976d427a40c2abbd63e01edd8474ed15b3ac82ec70d05",
+      "configHash": "9945ba7062525849f3499fe83d74d6b6473285777bbb2d066b264e1126da3a8a",
       "tools": [
         {
           "name": "execute_code",
@@ -663,7 +663,7 @@
         }
       ],
       "resources": [],
-      "cachedAt": 1780969838952
+      "cachedAt": 1781672582657
     }
   }
 }

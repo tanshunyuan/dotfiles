@@ -1,0 +1,79 @@
+{
+  "version": 3,
+  "skills": {
+    "to-issues": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/to-issues/SKILL.md",
+      "skillFolderHash": "8d7393a4127ee678f4b99070f436a2a87014c6e7",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-06-24T09:19:29.660Z",
+      "updatedAt": "2026-07-01T13:43:14.594Z"
+    },
+    "planning-with-files": {
+      "source": "OthmanAdi/planning-with-files",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/OthmanAdi/planning-with-files.git",
+      "skillPath": "skills/planning-with-files/SKILL.md",
+      "skillFolderHash": "98750cbd83bc3f179bedd8033688c869300a8697",
+      "installedAt": "2026-07-01T13:31:24.864Z",
+      "updatedAt": "2026-07-01T13:31:24.864Z"
+    },
+    "ponytail": {
+      "source": "DietrichGebert/ponytail",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/DietrichGebert/ponytail.git",
+      "skillPath": "skills/ponytail/SKILL.md",
+      "skillFolderHash": "f2a46af45b7c0a57edf990bd43ed2e79782c31ef",
+      "installedAt": "2026-07-01T13:35:10.405Z",
+      "updatedAt": "2026-07-01T13:35:10.405Z"
+    },
+    "teach": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/teach/SKILL.md",
+      "skillFolderHash": "3b6a4245e2aaeacb308ba6175ab3e7f2e43b0c47",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-07-01T13:43:14.592Z",
+      "updatedAt": "2026-07-01T13:43:14.592Z"
+    },
+    "caveman": {
+      "source": "JuliusBrussee/caveman",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
+      "skillPath": "skills/caveman/SKILL.md",
+      "skillFolderHash": "a22aa2a0a64d7d4b7b59bbddbdb865fedfb40d9c",
+      "installedAt": "2026-07-01T13:45:45.495Z",
+      "updatedAt": "2026-07-01T13:45:45.495Z"
+    },
+    "liteparse": {
+      "source": "run-llama/llamaparse-agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/run-llama/llamaparse-agent-skills.git",
+      "skillPath": "skills/liteparse/SKILL.md",
+      "skillFolderHash": "c8a6189b121b7333a84892d3f43e33dde0bc88cb",
+      "installedAt": "2026-07-01T13:46:16.975Z",
+      "updatedAt": "2026-07-01T13:46:16.975Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "antigravity-cli",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-code-cli",
+    "opencode",
+    "warp",
+    "zed"
+  ]
+}

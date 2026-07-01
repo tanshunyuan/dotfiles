@@ -36,3 +36,8 @@ alias pi-zai='set -a; source ~/.pi/agent/.env; set +a; pi'
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 export PATH="$HOME/.config/zig-aarch64-macos-0.17.0-dev.813+2153f8143/zig:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/saitama/.lmstudio/bin"
+# End of LM Studio CLI section
+
